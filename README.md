@@ -24,6 +24,16 @@ Report des résultats des principales étapes à la fin du script
 Branche pour intégration du script dans une installation par debootstrap
 ------------------------------------------------------------------------
 
+Décomposition de certains packages
+----------------------------------
+Sortir Virtualbox
+Package dédié pour conky
+
+Petites évolutions
+------------------
+Inclusions vimrc, toprc, bashrc, ...
+Sauvegarde de /etc/apt/sources.list et preferences avant écrasement
+
 Documentation
 -------------
 
