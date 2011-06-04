@@ -5,6 +5,7 @@
 
 # APT manager to invoke
 export APT_MGR='aptitude -s'
+#export APT_MGR='aptitude -y'
 
 # The path to this script (used for other pathes)
 ROOT_DIR="$(cd "$(dirname "$0")"; pwd)"
@@ -64,11 +65,11 @@ installPackage() {
   chmod +x "$INSTALLER_CMD_NAME"
 
   # This WTF system only to have the return code in the showError :(
-  # (using tee makes $? = 0 in all cases)
+  # (using tee via a pipe makes $? = 0 in all cases)
   local log_tmp="$(mktemp)"
   "./$INSTALLER_CMD_NAME" &> "$log_tmp"
   local return_code=$?
-  cat "$log_tmp" >> "$LOG_FILE"
+  tee -a "$LOG_FILE" < "$log_tmp"
   rm "$log_tmp"
 
   [ $return_code -eq 0 ] && return 0
@@ -97,16 +98,6 @@ while read <&3 package_dir; do
   }
 done
 exec 3<&-
-
-
-# #############################################################################
-# End of installation
-
-showTitle1 'Ending installation'
-
-showMessage 'Cleaning packages'
-$APT_MGR clean
-
 
 exit $EXIT_CODE_OK
 

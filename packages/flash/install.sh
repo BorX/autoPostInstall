@@ -5,12 +5,12 @@
 showTitle2 'Installing Flash'
 
 showMessage 'Aptitude : Installing flashplugin-nonfree'
-$APT_MGR -y install flashplugin-nonfree || exit $?
+$APT_MGR install flashplugin-nonfree || exit $?
 exit 0
 
 
 showMessage 'Aptitude : Installing nspluginwrapper ia32-libs ia32-libs-gtk'
-$APT_MGR -y install nspluginwrapper ia32-libs ia32-libs-gtk || exit $?
+$APT_MGR install nspluginwrapper ia32-libs ia32-libs-gtk || exit $?
 
 showMessage 'Downloading Flash Player 10 Installer'
 wget -O /tmp/flash.tar.gz http://fpdownload.macromedia.com/get/flashplayer/current/install_flash_player_10_linux.tar.gz || exit $?

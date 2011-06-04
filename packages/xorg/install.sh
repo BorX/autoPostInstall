@@ -4,4 +4,4 @@
 
 showTitle2 'Installing Xorg'
 showMessage 'Aptitude : Installing nvidia'
-$APT_MGR -y install nvidia-glx nvidia-settings libgl1-mesa-glx
+$APT_MGR install nvidia-glx nvidia-settings libgl1-mesa-glx

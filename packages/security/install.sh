@@ -5,7 +5,7 @@
 showTitle2 'Installing security tools'
 
 showMessage 'Aptitude : Installing tripwire lire'
-$APT_MGR -y install tripwire lire || exit $?
+$APT_MGR install tripwire lire || exit $?
 
 showMessage 'Aptitude : Installing chkrootkit rkhunter fail2ban checksecurity logcheck'
-$APT_MGR -y install chkrootkit rkhunter fail2ban checksecurity logcheck
+$APT_MGR install chkrootkit rkhunter fail2ban checksecurity logcheck

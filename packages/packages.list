@@ -1,4 +1,5 @@
-iptables-init
+## Refer to https://github.com/BorX/iptables-init
+#iptables-init
 sources
 upgrade
 exim4
@@ -8,3 +9,4 @@ xorg
 gnome
 flash
 googleTalkPlugin
+end

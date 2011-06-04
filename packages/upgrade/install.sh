@@ -4,5 +4,5 @@
 
 showTitle2 'Upgrading system'
 showMessage 'Aptitude : Full-Upgrade'
-$APT_MGR -y full-upgrade
+$APT_MGR full-upgrade
 
