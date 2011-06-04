@@ -1,7 +1,7 @@
 #!/bin/bash
 
 showMessage() {
-  cat <<< "$*" | tee -a "$LOG_FILE"
+  cat <<< "$*"
 }
 
 showTitle2() {

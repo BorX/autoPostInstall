@@ -21,7 +21,7 @@ INSTALLER_CMD_NAME='install.sh'
 
 # Log file
 mkdir -p "$ROOT_DIR/log"
-export LOG_FILE="$ROOT_DIR/log/$(date +%Y%m%d-%H%M).log"
+LOG_FILE="$ROOT_DIR/log/$(date +%Y%m%d-%H%M).log"
 
 # Path to the common library
 export LIB_FILE="$ROOT_DIR/lib.sh"
@@ -65,12 +65,11 @@ installPackage() {
   chmod +x "$INSTALLER_CMD_NAME"
 
   # This WTF system only to have the return code in the showError :(
-  # (using tee via a pipe makes $? = 0 in all cases)
-  local log_tmp="$(mktemp)"
-  "./$INSTALLER_CMD_NAME" &> "$log_tmp"
-  local return_code=$?
-  tee -a "$LOG_FILE" < "$log_tmp"
-  rm "$log_tmp"
+  # (using tee makes $? = 0 in all cases)
+  local rc_tmp="$(mktemp)"
+  { "./$INSTALLER_CMD_NAME"; echo $? > "$rc_tmp"; }
+  local return_code="$(cat "$rc_tmp")"
+  rm "$rc_tmp"
 
   [ $return_code -eq 0 ] && return 0
   showError "Something wrong during running of '$package_dir/$INSTALLER_CMD_NAME' (return code : $return_code)"
@@ -82,7 +81,7 @@ installPackage() {
 # Main
 
 # Check if user is root
-#TODO[ $(id -u) -eq 0 ] || showErrorAndExit $EXIT_CODE_USER_HAVE_TO_BE_ROOT 'Script can only be invoked by root'
+[ $(id -u) -eq 0 ] || showErrorAndExit $EXIT_CODE_USER_HAVE_TO_BE_ROOT 'Script can only be invoked by root'
 
 # Keep standard input for subshells
 exec 3< "$PACKAGES_LIST_FILE"
@@ -96,7 +95,7 @@ while read <&3 package_dir; do
     done
     [[ "$canContinue" = [Yy] ]] || showErrorAndExit $EXIT_CODE_USER 'Stopped by user'
   }
-done
+done 2>&1 | tee -a "$LOG_FILE"
 exec 3<&-
 
 exit $EXIT_CODE_OK

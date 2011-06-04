@@ -6,7 +6,6 @@
 ## stable -- Backports
  deb http://backports.debian.org/debian-backports squeeze-backports main
 
-
 ## stable -- Multimedia
  deb     http://www.debian-multimedia.org squeeze main
 #deb-src http://www.debian-multimedia.org squeeze main

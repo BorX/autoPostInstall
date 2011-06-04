@@ -9,7 +9,7 @@ cp -v sources.list preferences /etc/apt/ || {
   exit $rcode
 }
 chown root:root /etc/apt/{sources.list,preferences}
-chmod 644 etc/apt/{sources.list,preferences}
+chmod 644 /etc/apt/{sources.list,preferences}
 
 showTitle2 'Installing keys'
 
