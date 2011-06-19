@@ -85,7 +85,8 @@ installPackage() {
 # Keep standard input for subshells
 exec 3< "$PACKAGES_LIST_FILE"
 while read <&3 package_dir; do
-  [ "$(echo $package_dir | cut -c 1)" == '#' ] && continue
+  firstChar="$(echo $package_dir | cut -c 1)"
+  [ -z "$firstChar" -o "$firstChar" == '#' ] && continue
   installPackage "$PACKAGES_DIR/$package_dir" || {
     unset canContinue
     while [[ ! "$canContinue" = [YyNn] ]]; do
