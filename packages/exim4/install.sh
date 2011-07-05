@@ -4,5 +4,5 @@
 
 showTitle2 'Installing exim4'
 showMessage 'Aptitude : Installing exim4'
-$APT_MGR install exim4 exim4-daemon-light
+$APT_MGR install exim4-daemon-light
 
