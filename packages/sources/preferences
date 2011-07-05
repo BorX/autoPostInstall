@@ -1,11 +1,3 @@
-Package: iceweasel
-Pin: release o=Debian,a=unstable,n=sid,l=Debian,c=main
-Pin-Priority: 1000
-
-Package: iceweasel-l10n-fr
-Pin: release o=Debian,a=unstable,n=sid,l=Debian,c=main
-Pin-Priority: 1000
-
 Package: *
 Pin: release o=Debian,a=stable,n=squeeze,l=Debian,c=main
 Pin-Priority: 900
