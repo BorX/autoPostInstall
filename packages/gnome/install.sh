@@ -24,3 +24,8 @@ cat >> /etc/X11/Xsession.d/55gnome-session_gnomerc <<EOF
 export WINDOW_MANAGER=/usr/bin/compiz
 EOF
 
+# TODO
+# cp -ai /data/installer/xorg.conf /etc/X11/
+# diff /usr/bin/gnome-wm /data/installer/gnome-wm
+# cp -ai /data/installer/gnome-wm /usr/bin/gnome-wm
+
