@@ -1,5 +1,6 @@
 ## Refer to https://github.com/BorX/iptables-init
 #iptables-init
+configureEtc
 sources
 upgrade
 exim4
