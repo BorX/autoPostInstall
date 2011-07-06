@@ -4,6 +4,7 @@ upgrade
 exim4
 security
 console
+vcs
 lamp
 ftp
 xorg
