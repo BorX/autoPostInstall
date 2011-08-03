@@ -1,0 +1,47 @@
+Package: *
+Pin: release o=Debian,a=stable,n=squeeze,l=Debian,c=main
+Pin-Priority: 900
+
+Package: *
+Pin: release o=Debian Backports,a=squeeze-backports,n=squeeze-backports,l=Debian Backports,c=main
+Pin-Priority: 995
+
+Package: *
+Pin: release o=Unofficial Multimedia Packages,a=stable,n=squeeze,l=Unofficial Multimedia Packages,c=main
+Pin-Priority: 900
+
+Package: *
+Pin: release o=Debian,a=stable,n=squeeze,l=Debian-Security,c=main
+Pin-Priority: 900
+
+Package: *
+Pin: release o=Debian,a=squeeze-updates,n=squeeze-updates,l=Debian,c=main
+Pin-Priority: 900
+
+Package: *
+Pin: release o=Debian,a=testing,n=wheezy,l=Debian,c=main
+Pin-Priority: 700
+
+Package: *
+Pin: release o=Debian,a=testing,n=wheezy,l=Debian-Security,c=main
+Pin-Priority: 700
+
+Package: *
+Pin: release o=Unofficial Multimedia Packages,a=testing,n=wheezy,l=Unofficial Multimedia Packages,c=main
+Pin-Priority: 700
+
+Package: *
+Pin: release o=Debian,a=unstable,n=sid,l=Debian,c=main
+Pin-Priority: 90
+
+Package: *
+Pin: release o=Unofficial Multimedia Packages,a=unstable,n=sid,l=Unofficial Multimedia Packages,c=main
+Pin-Priority: 90
+
+Package: *
+Pin: release o=Debian,a=experimental,n=experimental,l=Debian,c=main
+Pin-Priority: -10
+
+Package: *
+Pin: release o=Unofficial Multimedia Packages,a=experimental,n=experimental,l=Unofficial Multimedia Packages,c=main
+Pin-Priority: -10

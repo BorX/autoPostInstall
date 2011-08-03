@@ -1,0 +1,53 @@
+###############################################################################
+## stable
+ deb     http://ftp.fr.debian.org/debian/ squeeze main
+#deb-src http://ftp.fr.debian.org/debian/ squeeze main
+
+## stable -- Backports
+ deb http://backports.debian.org/debian-backports squeeze-backports main
+
+## stable -- Multimedia
+#deb     http://www.debian-multimedia.org squeeze main
+#deb-src http://www.debian-multimedia.org squeeze main
+
+## stable -- Security
+ deb     http://security.debian.org/ squeeze/updates main
+#deb-src http://security.debian.org/ squeeze/updates main
+
+## stable -- Volatile
+ deb     http://ftp.fr.debian.org/debian/ squeeze-updates main
+#deb-src http://ftp.fr.debian.org/debian/ squeeze-updates main
+
+
+###############################################################################
+## testing
+ deb     http://ftp.fr.debian.org/debian/ testing main
+#deb-src http://ftp.fr.debian.org/debian/ testing main
+
+## testing -- Multimedia
+#deb     http://www.debian-multimedia.org testing main
+#deb-src http://www.debian-multimedia.org testing main
+
+## testing -- Security
+ deb     http://security.debian.org/ testing/updates main
+#deb-src http://security.debian.org/ testing/updates main
+
+
+###############################################################################
+## sid
+ deb     http://ftp.fr.debian.org/debian/ sid main
+#deb-src http://ftp.fr.debian.org/debian/ sid main
+
+## sid -- Multimedia
+#deb     http://www.debian-multimedia.org sid main
+#deb-src http://www.debian-multimedia.org sid main
+
+
+###############################################################################
+## experimental
+ deb     http://ftp.fr.debian.org/debian/ experimental main
+#deb-src http://ftp.fr.debian.org/debian/ experimental main
+
+## experimental -- Multimedia (Seulement pour arch amd64)
+#deb     http://www.debian-multimedia.org experimental main
+#deb-src http://www.debian-multimedia.org experimental main

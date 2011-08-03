@@ -1,6 +1,7 @@
 configureEtc
 sources
 upgrade
+
 exim4
 security
 console
@@ -12,4 +13,21 @@ xorg
 gnome
 flash
 googleTalkPlugin
+
 end
+
+
+
+## Another config to post-install a xen-vm
+#configureEtc
+#sources-withoutMultimedia
+#upgrade
+#
+#users
+#
+#exim4
+#security
+#console
+#
+#end
+
