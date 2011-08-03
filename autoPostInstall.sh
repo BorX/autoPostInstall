@@ -5,6 +5,7 @@
 
 # APT manager to invoke
 export APT_MGR='aptitude -y'
+export APT_MGR_PROMPT='aptitude -P'
 
 # The path to this script (used for other pathes)
 ROOT_DIR="$(cd "$(dirname "$0")"; pwd)"

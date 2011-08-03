@@ -1,6 +1,13 @@
+mountSys
+tzdata
+
 configureEtc
 sources
 upgrade
+
+locales
+kernel
+users
 
 exim4
 security
@@ -16,13 +23,20 @@ googleTalkPlugin
 
 end
 
+umountSys
 
 
-## Another config to post-install a xen-vm
+
+## Another config to debootstrap a xen-system
+#mountSys
+#tzdata
+#
 #configureEtc
 #sources-withoutMultimedia
 #upgrade
 #
+#locales
+#kernel-xen
 #users
 #
 #exim4
@@ -30,4 +44,6 @@ end
 #console
 #
 #end
+#
+#umountSys
 
