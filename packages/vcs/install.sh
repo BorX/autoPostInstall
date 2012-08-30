@@ -4,4 +4,4 @@
 
 showTitle2 'Installing VCS'
 showMessage 'Aptitude : Installing VCS'
-$APT_MGR install subversion git mercurial
+$APT_MGR install git #subversion mercurial
