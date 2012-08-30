@@ -64,15 +64,8 @@ installPackage() {
   cd "$package_dir"
   chmod +x "$INSTALLER_CMD_NAME"
 
-  # This WTF system only to have the return code in the showError :(
-  # (using tee makes $? = 0 in all cases)
-  local rc_tmp="$(mktemp)"
-  { "./$INSTALLER_CMD_NAME"; echo $? > "$rc_tmp"; }
-  local return_code="$(cat "$rc_tmp")"
-  rm "$rc_tmp"
-
-  [ $return_code -eq 0 ] && return 0
-  showError "Something wrong during running of '$package_dir/$INSTALLER_CMD_NAME' (return code : $return_code)"
+  "./$INSTALLER_CMD_NAME" && return 0
+  showError "Something wrong during running of '$package_dir/$INSTALLER_CMD_NAME' (return code : $?)"
   return 2
 }
 
