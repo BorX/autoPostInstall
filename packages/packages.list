@@ -8,11 +8,13 @@ upgrade
 locales
 exim4
 kernel
+keyboard
 users
 
 security
 console
 vcs
+
 #lamp
 #ftp
 #p2p
@@ -21,31 +23,7 @@ vcs
 #flash
 #googleTalkPlugin
 
-keyboard
-
 end
 
 umountSys
-
-
-
-## Another config to debootstrap a xen-system
-#mountSys
-#tzdata
-#
-#configureEtc
-#sources-withoutMultimedia
-#upgrade
-#
-#locales
-#kernel-xen
-#users
-#
-#exim4
-#security
-#console
-#
-#end
-#
-#umountSys
 
