@@ -22,7 +22,7 @@ showMessage 'Aptitude : Updating'
 $APT_MGR update || exit $?
 
 showMessage 'Aptitude : Installing keys'
-$APT_MGR install debian-archive-keyring debian-multimedia-keyring || exit $?
+$APT_MGR install debian-archive-keyring deb-multimedia-keyring || exit $?
 
 showMessage 'Aptitude : Updating'
 $APT_MGR update
