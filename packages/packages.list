@@ -6,20 +6,22 @@ sources
 upgrade
 
 locales
+exim4
 kernel
 users
 
-exim4
 security
 console
 vcs
-lamp
-ftp
-p2p
-xorg
-gnome
-flash
-googleTalkPlugin
+#lamp
+#ftp
+#p2p
+#xorg
+#gnome
+#flash
+#googleTalkPlugin
+
+keyboard
 
 end
 
