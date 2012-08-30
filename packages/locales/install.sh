@@ -5,5 +5,4 @@
 showTitle2 'Locales configuration'
 
 $APT_MGR install locales || exit $?
-dpkg-reconfigure locales
 
