@@ -4,5 +4,5 @@
 
 showTitle2 'Installing console tools'
 showMessage 'Aptitude : Installing console tools'
-$APT_MGR install alpine mutt ssh bash-completion lsof less most file bc dc at vim colordiff sudo pv ccze fdupes sysstat time iftop nmap rsync ftp telnet whois w3m deborphan p7zip-full unzip zip pm-utils hdparm byobu git
+$APT_MGR install mutt bash-completion lsof less most foremost file vim colordiff sudo pv ccze lwatch fdupes sysstat time iftop atop iotop htop rsync whois deborphan p7zip-full unzip zip byobu #ssh bc dc at nmap ftp telnet w3m pm-utils hdparm
 
