@@ -4,9 +4,10 @@
 
 showMessage 'Stopping daemons'
 invoke-rc.d fail2ban stop
-invoke-rc.d atd      stop
-invoke-rc.d dbus     stop
-invoke-rc.d rsyslog  stop
+invoke-rc.d mdadm    stop
+invoke-rc.d lvm2     stop
+invoke-rc.d exim4    stop
+invoke-rc.d atop     stop
 
 showMessage 'Unmounting filesystems'
 sleep 5
