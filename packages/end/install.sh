@@ -7,3 +7,9 @@ showTitle2 'Ending installation'
 showMessage 'Aptitude : Cleaning packages'
 $APT_MGR clean
 
+showMessage 'Stopping daemons'
+invoke-rc.d fail2ban stop
+invoke-rc.d mdadm    stop
+invoke-rc.d lvm2     stop
+invoke-rc.d exim4    stop
+invoke-rc.d atop     stop
