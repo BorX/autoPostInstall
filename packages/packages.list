@@ -1,4 +1,3 @@
-mountSys
 tzdata
 
 configureEtc
@@ -24,6 +23,4 @@ vcs
 #googleTalkPlugin
 
 end
-
-umountSys
 
