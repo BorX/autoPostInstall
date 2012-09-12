@@ -13,3 +13,5 @@ invoke-rc.d mdadm    stop
 invoke-rc.d lvm2     stop
 invoke-rc.d exim4    stop
 invoke-rc.d atop     stop
+invoke-rc.d dbus     stop
+invoke-rc.d cups     stop
