@@ -2,11 +2,16 @@
 
 [ -n "$APT_MGR" ] && [ -r "$LIB_FILE" ] && . "$LIB_FILE" || { echo >&2 'Need to be invoked by autoinstall.sh'; exit 1; }
 
+COMPIZ_PACKAGE='compiz compizconfig-settings-manager compiz-fusion-plugins-main'
+WM_SESSION='xfce4-session'
+#WM_SESSION='gnome-session'
+
 showTitle2 'Installing Xorg'
-#$APT_MGR install xorg
+#showMessage 'Aptitude : Installing Compiz, gdm3 and wm-session'
+#$APT_MGR install xorg $COMPIZ_PACKAGE gdm3 $WM_SESSION || exit $?
 
 # Necessite l'activation des depots non-free et contrib
-showMessage 'Aptitude : Installing nvidia'
-$APT_MGR install nvidia-glx nvidia-settings nvidia-xconfig || exit $?
+showMessage 'Aptitude : Installing nvidia, Compiz, gdm3 and wm-session'
+$APT_MGR install nvidia-glx nvidia-settings nvidia-xconfig $COMPIZ_PACKAGE gdm3 $WM_SESSION || exit $?
 nvidia-xconfig
 

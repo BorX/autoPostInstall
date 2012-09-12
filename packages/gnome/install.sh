@@ -2,16 +2,13 @@
 
 [ -n "$APT_MGR" ] && [ -r "$LIB_FILE" ] && . "$LIB_FILE" || { echo >&2 'Need to be invoked by autoinstall.sh'; exit 1; }
 
-showTitle2 'Installing Gnome'
-
-showMessage 'Aptitude : Installing gdm3 gnome-session'
-$APT_MGR install gdm3 gnome-session || exit $?
+showTitle2 'Installing Desktop'
 
 showMessage 'Aptitude : Installing Gnome minimal'
-$APT_MGR install gnome-screensaver rss-glx gnome-terminal network-manager-gnome update-notifier gdebi xdg-utils cairo-dock hpijs hplip-gui hp-ppd gedit eog evince file-roller gimp openoffice.org-gnome openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw iceweasel-l10n-fr icedtea6-plugin totem-mozilla deluge meld totem-plugins gnome-codec-install rhythmbox-plugins rhythmbox-plugin-cdrecorder inkscape virtualbox-ose filezilla vlc fslint gcalctool nautilus-open-terminal nautilus-actions || exit $?
-
-showMessage 'Aptitude : Installing Compiz'
-$APT_MGR install compiz compizconfig-settings-manager compiz-fusion-plugins-main || exit $?
+$APT_MGR install gnome-screensaver rss-glx gnome-terminal network-manager-gnome update-notifier gdebi xdg-utils hpijs hplip-gui hp-ppd gedit eog evince file-roller gimp openoffice.org-gnome openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw deluge meld totem-plugins gnome-codec-install rhythmbox-plugins rhythmbox-plugin-cdrecorder filezilla vlc fslint gcalctool nautilus-open-terminal nautilus-actions || exit $?
+#cairo-dock 
+#iceweasel-l10n-fr totem-mozilla 
+#virtualbox-ose inkscape
 
 showMessage 'Aptitude : Installing Gnome minimal non-free'
 $APT_MGR install ttf-mscorefonts-installer conky || exit $?
