@@ -7,11 +7,6 @@ WM_SESSION='xfce4-session'
 #WM_SESSION='gnome-session'
 
 showTitle2 'Installing Xorg'
-#showMessage 'Aptitude : Installing Compiz, gdm3 and wm-session'
-#$APT_MGR install xorg $COMPIZ_PACKAGE gdm3 $WM_SESSION || exit $?
-
-# Necessite l'activation des depots non-free et contrib
-showMessage 'Aptitude : Installing nvidia, Compiz, gdm3 and wm-session'
-$APT_MGR install nvidia-glx nvidia-settings nvidia-xconfig $COMPIZ_PACKAGE gdm3 $WM_SESSION || exit $?
-nvidia-xconfig
+showMessage 'Aptitude : Installing Compiz, gdm3 and wm-session'
+$APT_MGR install xorg $COMPIZ_PACKAGE gdm3 $WM_SESSION || exit $?
 

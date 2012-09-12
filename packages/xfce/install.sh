@@ -5,10 +5,10 @@
 showTitle2 'Installing Desktop'
 
 showMessage 'Aptitude : Installing Desktop minimal'
-$APT_MGR install hpijs hplip-gui hp-ppd gimp openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw deluge meld totem-plugins rhythmbox-plugins rhythmbox-plugin-cdrecorder filezilla vlc fslint gcalctool gnome-terminal || exit $?
-#cairo-dock 
-#iceweasel-l10n-fr totem-mozilla 
+$APT_MGR install gimp openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw meld totem-plugins rhythmbox-plugins rhythmbox-plugin-cdrecorder filezilla vlc fslint gcalctool gnome-terminal || exit $?
 #virtualbox-ose inkscape
+$APT_MGR install -t experimental iceweasel-l10n-fr 
+#totem-mozilla 
 showMessage 'Aptitude : Installing Desktop minimal non-free'
-$APT_MGR install ttf-mscorefonts-installer conky || exit $?
+$APT_MGR install ttf-mscorefonts-installer || exit $?
 
