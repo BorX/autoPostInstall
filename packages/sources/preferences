@@ -1,11 +1,31 @@
-Package: *
-Pin: release v=None,o=Unofficial Multimedia Packages,a=unstable,n=sid,l=Unofficial Multimedia Packages
-Pin-Priority: 902
+#Package: *
+#Pin: release n=squeeze-backports
+#Pin-Priority: 900
+
+#Package: *
+#Pin: release n=squeeze-updates
+#Pin-Priority: 900
+
+#Package: *
+#Pin: release n=squeeze
+#Pin-Priority: 900
+
+#Package: *
+#Pin: release n=stable
+#Pin-Priority: 900
+
+
+#Package: *
+#Pin: release a=testing
+#Pin-Priority: 700
+
+
+#Package: *
+#Pin: release a=unstable
+#Pin-Priority: 90
+
 
 Package: *
-Pin: release o=Debian,a=unstable,n=sid,l=Debian
-Pin-Priority: 901
+Pin: release a=experimental
+Pin-Priority: 1
 
-Package: *
-Pin: release o=Debian,a=experimental,n=experimental,l=Debian
-Pin-Priority: -12

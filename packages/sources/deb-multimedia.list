@@ -1,0 +1,25 @@
+###############################################################################
+## stable
+
+ deb     http://www.deb-multimedia.org squeeze      main non-free
+#deb-src http://www.deb-multimedia.org squeeze      main non-free
+
+
+###############################################################################
+## testing
+ deb     http://www.deb-multimedia.org testing      main non-free
+#deb-src http://www.deb-multimedia.org testing      main non-free
+
+
+###############################################################################
+## sid
+ deb     http://www.deb-multimedia.org sid          main non-free
+#deb-src http://www.deb-multimedia.org sid          main non-free
+
+
+###############################################################################
+## experimental
+
+ deb     http://www.deb-multimedia.org experimental main non-free
+#deb-src http://www.deb-multimedia.org experimental main non-free
+

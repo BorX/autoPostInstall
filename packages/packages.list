@@ -2,7 +2,6 @@ tzdata
 
 configureEtc
 sources
-upgrade
 
 locales
 exim4
@@ -20,6 +19,8 @@ vcs
 xorg
 xfce
 #gnome
+iceweasel
+cairoDock
 #flash
 #googleTalkPlugin
 
