@@ -5,9 +5,9 @@
 showTitle2 'Installing Desktop'
 
 showMessage 'Aptitude : Installing Gnome minimal'
-$APT_MGR install gnome-screensaver rss-glx gnome-terminal network-manager-gnome update-notifier gdebi xdg-utils hpijs hplip-gui hp-ppd gedit eog evince file-roller gimp openoffice.org-gnome openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw deluge meld totem-plugins gnome-codec-install rhythmbox-plugins rhythmbox-plugin-cdrecorder filezilla vlc fslint gcalctool nautilus-open-terminal nautilus-actions || exit $?
-#cairo-dock 
-#iceweasel-l10n-fr totem-mozilla 
+$APT_MGR install gnome-screensaver rss-glx gnome-terminal network-manager-gnome update-notifier gdebi xdg-utils hpijs hplip-gui hp-ppd gedit eog evince file-roller cairo-dock cairo-dock-plug-ins gimp openoffice.org-gnome openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw deluge meld totem-plugins gnome-codec-install rhythmbox-plugins rhythmbox-plugin-cdrecorder filezilla vlc fslint gcalctool nautilus-open-terminal nautilus-actions || exit $?
+$APT_MGR install -t experimental iceweasel-l10n-fr || exit $?
+#totem-mozilla
 #virtualbox-ose inkscape
 
 showMessage 'Aptitude : Installing Gnome minimal non-free'
