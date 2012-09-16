@@ -1,59 +1,38 @@
 ###############################################################################
 ## stable
-#deb     http://ftp.fr.debian.org/debian/ squeeze main #contrib non-free
-#deb-src http://ftp.fr.debian.org/debian/ squeeze main #contrib non-free
+ deb     http://ftp.fr.debian.org/debian/         stable           main contrib non-free
+#deb-src http://ftp.fr.debian.org/debian/         stable           main contrib non-free
 
 ## stable -- Backports
-#deb http://backports.debian.org/debian-backports squeeze-backports main #contrib non-free
-
-## stable -- Multimedia
-#deb     http://www.debian-multimedia.org squeeze main #non-free
-#deb-src http://www.debian-multimedia.org squeeze main #non-free
+#deb http://backports.debian.org/debian-backports stable-backports main contrib non-free
 
 ## stable -- Security
-#deb     http://security.debian.org/ squeeze/updates main #contrib non-free
-#deb-src http://security.debian.org/ squeeze/updates main #contrib non-free
+ deb     http://security.debian.org/              stable/updates   main contrib non-free
+#deb-src http://security.debian.org/              stable/updates   main contrib non-free
 
 ## stable -- Volatile
-#deb     http://ftp.fr.debian.org/debian/ squeeze-updates main #contrib non-free
-#deb-src http://ftp.fr.debian.org/debian/ squeeze-updates main #contrib non-free
+ deb     http://ftp.fr.debian.org/debian/         stable-updates   main contrib non-free
+#deb-src http://ftp.fr.debian.org/debian/         stable-updates   main contrib non-free
 
 
 ###############################################################################
 ## testing
-#deb     http://ftp.fr.debian.org/debian/ testing main #contrib non-free
-#deb-src http://ftp.fr.debian.org/debian/ testing main #contrib non-free
-
-## testing -- Multimedia
-#deb     http://www.debian-multimedia.org testing main #non-free
-#deb-src http://www.debian-multimedia.org testing main #non-free
+ deb     http://ftp.fr.debian.org/debian/         testing          main contrib non-free
+#deb-src http://ftp.fr.debian.org/debian/         testing          main contrib non-free
 
 ## testing -- Security
-#deb     http://security.debian.org/ testing/updates main #contrib non-free
-#deb-src http://security.debian.org/ testing/updates main #contrib non-free
+ deb     http://security.debian.org/              testing/updates  main contrib non-free
+#deb-src http://security.debian.org/              testing/updates  main contrib non-free
 
 
 ###############################################################################
 ## sid
- deb     http://ftp.fr.debian.org/debian/ sid main #contrib non-free
-#deb-src http://ftp.fr.debian.org/debian/ sid main #contrib non-free
-
-## sid -- Multimedia
- deb     http://www.debian-multimedia.org sid main #non-free
-#deb-src http://www.debian-multimedia.org sid main #non-free
+ deb     http://ftp.fr.debian.org/debian/         sid              main contrib non-free
+#deb-src http://ftp.fr.debian.org/debian/         sid              main contrib non-free
 
 
 ###############################################################################
 ## experimental
- deb     http://ftp.fr.debian.org/debian/ experimental main #contrib non-free
-#deb-src http://ftp.fr.debian.org/debian/ experimental main #contrib non-free
+ deb     http://ftp.fr.debian.org/debian/         experimental     main contrib non-free
+#deb-src http://ftp.fr.debian.org/debian/         experimental     main contrib non-free
 
-## experimental -- Multimedia (Seulement pour arch amd64)
-#deb     http://www.debian-multimedia.org experimental main #contrib non-free
-#deb-src http://www.debian-multimedia.org experimental main #contrib non-free
-
-
-###############################################################################
-## Divers
-
-#deb     http://mozilla.debian.net/ squeeze-backports iceweasel-release
