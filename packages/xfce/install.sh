@@ -5,7 +5,7 @@
 showTitle2 'Installing Desktop'
 
 showMessage 'Aptitude : Installing Desktop minimal'
-$APT_MGR install hpijs hplip-gui hp-ppd cairo-dock cairo-dock-plug-ins gimp openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw deluge meld totem-plugins rhythmbox-plugins rhythmbox-plugin-cdrecorder filezilla vlc fslint gcalctool gnome-terminal || exit $?
+$APT_MGR install hpijs hplip-gui hp-ppd cairo-dock cairo-dock-plug-ins gimp openoffice.org-writer openoffice.org-calc openoffice.org-impress openoffice.org-draw deluge meld totem-plugins rhythmbox-plugins rhythmbox-plugin-cdrecorder filezilla vlc fslint gcalctool gnome-terminal gedit file-roller evince || exit $?
 $APT_MGR install -t experimental iceweasel-l10n-fr || exit $?
 #totem-mozilla 
 #virtualbox-ose inkscape
